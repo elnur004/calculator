@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 21, 55);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  width: 400px;
+}
+
+.display {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4px 10px;
+  grid-column: 1 / -1;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: beige;
+  border-radius: 10px;
+}
+
+.prev-number {
+  font-size: 1.5rem;
+  color: rgb(180, 189, 195);
+}
+
+.current-number {
+  font-size: 2.5rem;
+  color: rgb(32, 43, 50);
+}
+
+.operator {
+  background-color: rgb(255, 121, 3);
+}
+
+.operator:hover {
+  background-color: rgba(114, 70, 27, 0.913);
+}
+
+.button {
+  font-size: 2rem;
+  border: 1px solid rgb(178, 177, 177);
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  color: blanchedalmond;
+}
+
+.number,
+.clear {
+  background-color: rgba(58, 58, 86, 0.7);
+}
+
+.all-clear {
+  background-color: #af1212;
+}
+
+.all-clear:hover {
+  background-color: rgba(162, 10, 10, 0.674);
+}
+
+.number:hover,
+.clear:hover {
+  background-color: rgba(5, 34, 60, 0.794);
+}
+
+.equal {
+  grid-column: span 2;
+}
