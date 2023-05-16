@@ -115,6 +115,7 @@ const clearOne = () => {
   currentInputEl.innerText = currentInputEl.innerText.slice(0, -1);
   if (currentInputEl.innerText === '') {
     prevInputEl.innerText = prevInputEl.innerText = '';
+    prevNumber = '';
   }
   currentNumber = currentNumber.slice(0, -1);
 };
