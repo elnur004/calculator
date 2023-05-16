@@ -3,4 +3,4 @@
 
 <p>To create the project used HTML, CSS3, JavaScript tools</p>
 
-This is a link: https://elnur004.github.io/calculator/
+This is a link: 
